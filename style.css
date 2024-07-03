@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(50deg, #f9b2f5, #d666cd);
+    color: #fff;
+    position: relative;
+}
+.container{
+    width: 500px;
+    min-height: 180px;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-48%,-48%);
+    
+}
+.digi-clock{
+    width: 70%;
+    height: 100%;
+    background: rgba(51, 255, 0, 0.982);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+    padding: 30px;
+
+}
+.digi-clock span{
+    font-size: 50px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.digi-clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 70%;
+    transform: translateX(-50%);
+    margin: -10px;
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINUTE';
+}
+#sec::after{
+    content: 'SEC';
+}
